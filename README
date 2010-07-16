@@ -1,1 +1,9 @@
 Using a hidden (¿?) 4sq feature to show anyone's last know location
+
+Edit 4sq.py file:
+- Specify your foursquare username whose location you want to fetch: user = "...".
+- Specify file to which location would be written: output_path = "...".
+- Check first line to make sure path to python binary is correct.
+
+Test it by running $ ./4sq.py and checking output file. If necessary _touch_ output file
+giving it proper permissions.
