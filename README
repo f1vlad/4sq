@@ -1,4 +1,4 @@
-Using a hidden (¿?) 4sq feature to show anyone's last know location
+Using a hidden (¿?) 4sq feature to show anyone's last known location
 
 Edit 4sq.py file:
 - Specify your foursquare username whose location you want to fetch: user = "...".
@@ -7,3 +7,8 @@ Edit 4sq.py file:
 
 Test it by running $ ./4sq.py and checking output file. If necessary _touch_ output file
 giving it proper permissions.
+
+Automate the process:
+- You can add this script to your cronjob to run periodically. I do the following to run
+it every 15 minutes: */15 * * * * /home/vlad/etc/4sq.loc/4sq.py
+
