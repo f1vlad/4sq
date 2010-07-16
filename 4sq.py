@@ -10,10 +10,10 @@ try:
     loc = page.read()
     start=loc.index("div class=\"address\"")+20
     offset = loc[start+20:start+400].index("</div>")+1
+    loc=loc[start:start+offset]
 except IOerror:
     loc = 'Unknown'
 
-loc=loc[start:start+offset]
 f = open(output_path,'w')
 f.write(loc)
 # print loc[start:start+offset]
