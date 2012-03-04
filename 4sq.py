@@ -6,7 +6,8 @@ output_path = "/var/www/fs.f1vlad.com/etc/%s.4sq.rss" % user # specify output fi
 url = "http://foursquare.com/search?q=%s&x=0&y=0" % user # nothing to touch here
 
 try:
-    page = urllib.urlopen(url)    loc = page.read()
+    page = urllib.urlopen(url)
+    loc = page.read()
     start=loc.index("div class=\"address\"")+20
     offset = loc[start:start+400].index("</div>")
     loc=loc[start:start+offset]
