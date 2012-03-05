@@ -1,3 +1,8 @@
+
+NOTE: foursquare method does not work anymore, using twitter now through yahoo pipe to get JSON then parsing it here in python
+
+________
+
 Using a hidden (¿?) 4sq feature to show anyone's last known location
 
 Edit 4sq.py file:
