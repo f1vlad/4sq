@@ -35,12 +35,11 @@ g2=float(s[1])+0.001+r
 
 
 g0="%s %s" % (g1,g2)
-print g0
+#print g0
 
 
 
-rss_file = '<rss version="2.0"><channel><title>%s last spotted location</title><link>http://f1vlad.com</link><description></description><language>en-us</language><lastBuildDate></lastBuildDate><item><title>%s</title><link>http://</link><description></description><pp
-ubDate></pubDate></item></channel></rss>' % (user,loc)
+rss_file = '<rss version="2.0"><channel><title>%s last spotted location</title><link>http://f1vlad.com</link><description></description><language>en-us</language><lastBuildDate></lastBuildDate><item><title>%s</title><link>http://</link><description></description><ppubDate></pubDate></item></channel></rss>' % (user,g0)
 
 #rss_file = loc
 
